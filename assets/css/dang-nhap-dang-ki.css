@@ -14,15 +14,15 @@ header nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 104px;
+    height: 100px;
 }
 header nav a {
     flex: 1;
 }
 header nav a img {
-    width: 150px;
+    width: 193px;
     height: auto;
-    margin-left: 200px;
+    margin-left: 70px;
     padding-left: 30px;
 }
 
