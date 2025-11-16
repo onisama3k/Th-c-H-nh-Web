@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dang-nhap-dang-ki.css">
+    <title>đăng kí</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/css/dang-nhap-dang-ki.css">
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+        </nav>
+    </header>
+    <main class="login-container">
+        <div class="login-box-wrapper">
+        <h1>TẠO TÀI KHOẢN MỚI</h1>
+        <form onsubmit="return validateRegisterForm(event)">
+        <div class="login-box">
+            <label for ="username">Tên Đăng Nhập:</label>
+            <input type ="text" id="RegisterUsername" name="username">
+        </div>
+        <div class="login-box">
+            <label for ="password">Mật Khẩu:</label>
+            <input type ="password" id="RegisterPassword" name="password">
+        </div>
+        <div class="login-box">
+            <label for="re-password">Xác Nhận Mật Khẩu:</label>
+            <input type ="password" id="RegisterRePassword" name="repassword">
+        </div>
+        <div class="login-box">
+            <label for ="email">Email:</label>
+            <input type ="email" id="RegisterEmail" name="email">
+        </div>
+        <div class="login-box">
+            <label for="PhoneNumber">Số Điện Thoại:</label>
+            <input type ="tel" id="RegisterPhoneNumber" name="phonenumber">
+        </div>
+        <div class="login-box">
+            <label for="address">Địa Chỉ:</label>
+            <input type="text" id="RegisterAddress" name="address">
+        </div>
+        <div class="button-group">
+          <div class="note-register">
+            <button type="submit" class="login-button">Đăng Kí</button>
+          </div>
+        </div>
+        </form>
+        <div class="error-box" id="errorBox">
+             <span class="close-btn" onclick="closeErrorBox()">&times;</span>
+             <div id="RegisterErrorMessages" style="color: red; margin-top: 10px;"></div>
+        </div>
+        <script src ="./dang-nhap-ki.js"></script>
+    </div>
+    </main>
+</body>
+</html>

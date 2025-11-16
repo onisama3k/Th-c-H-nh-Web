@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm khô</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/danhmuc.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header-top">
+        <div class="container">
+             <div class="header">
+            <div class="inner-header-top">
+                <div class="logo">
+                   <a href="index.html"> <img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="form-search">
+                     <span class="search-btn" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" id="searchInput" class="form-search-input" placeholder="Tìm kiếm sp...">
+                </div>
+
+                <div class="inner-left">
+                    <a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p></a>
+                    <a href="dang-nhap.html"><i class="fa-solid fa-user"></i>
+                    <p>Tài khoản</p>
+                    </a>
+                     
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="inner-header-bottom">
+                    <div class="menu-toggle">
+                       <i class="fa-solid fa-bars"></i>
+                       <span>Danh mục sản phẩm</span> 
+                     <div class="danh-muc">
+                        <ul>
+                           <li><a href="rau-cu-qua.html">Rau - củ - quả</a></li>
+                           <li><a href="thuc-pham-song.html">Thực phẩm tươi sống - hải sản</a></li>
+                           <li><a href="thuc-pham-kho.html">Thực phẩm khô - bánh kẹo & snack</a></li>
+                           <li><a href="do-uong.html">Đồ uống</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+     </div>
+    <!-- end header -->
+     <!-- thanh dieu huong -->
+    <div class="link-page">
+        <div class="container">
+            <div class="inner-link">
+                <a href="index.html">Trang chủ </a>
+                <span>/</span>
+                <a href=""> Thực phẩm khô</a>
+            </div>
+        </div>
+    </div>
+    <!-- end thanh dieu huong -->
+    <!-- quang cao -->
+     <div class="advertising">
+        <div class="container">
+            <div class="inner-banner">
+                <div class="banner-side active">
+                    <img src="./assets/images/bannerkho1.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/bannerkho2.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/bannerkho3.png" alt="">
+                </div>
+                 <div class="banner-side active">
+                    <img src="./assets/images/bannerkho4.png" alt="">
+                 </div>
+                
+
+                 <!-- Nút điều hướng -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Chấm tròn chỉ số -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+            </div>
+        </div>
+     </div>
+     <!-- end quang cao -->
+    
+
+    <!-- san pham rau -->
+     <div class="product">
+        <div class="container">
+            <div class="inner-product">
+                <h3>Mì</h3>
+                <div class="inner-items">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-sempio-vi-hai-san-rong-bien-103g.jpg" alt="">
+                                <p>Mì sempio vị hải sản</p>
+                                <h4>18.500đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-kokomi-90-tom-chua-cay-goi-90g.jpg" alt="">
+                                <p>Mì Kokomi</p>
+                                <h4>10.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-tron-pho-mai-mini-ottogi-goi-80g.jpg" alt="">
+                                <p>Mì trộn phô mai</p>
+                                <h4>8.900đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-xao-3-mien-gold-hanh-phi-tuong-toi-goi-75g.jpg" alt="">
+                                <p>Mì xào 3 Miền</p>
+                               <h4>30.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-oppa-tom-chua-cay-ottogi-goi-65g.jpg" alt="">
+                                <p>Mì Oppa tôm chua cay</p>
+                                <h4>25.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mi-3-mien-ga-soi-pho-goi-65g.jpg" alt="">
+                                <p>Mì 3 Miền gà sợi</p>
+                                <h4>20.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <div class="item">
+                                <img src="./assets/images/bun-ca-cay-hang-nga-goi-70g_202509160947334525.jpg" alt="">
+                                <p>Bún cá cay </p>
+                                <h4>23.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <div class="item">
+                                <img src="./assets/images/pho-bo-vifon-goi-90g-co-goi-thit-that_202508211335079753.jpg" alt="">
+                                <p> Phở bò Vifon 90g</p>
+                                <h4>25.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/loc-5-goi-pho-bo-tai-lan-de-nhat-goi-68g_202503261319238121.jpg" alt="">
+                                <p>Lốc 5 gói phở bò</p>
+                                <h4>35.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/pho-an-lien-long-trieu-vifon-vi-bo-goi-75g-202405171350042467.jpg" alt="">
+                                <p>Phở ăn liền Long Triều</p>
+                                <h4>30.500đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/pho-ga-cung-dinh-ha-noi-goi-68g.jpg" alt="">
+                                <p>Phở gà Cung Đình</p>
+                                <h4>39.900đ <span>đơn vị tính gói</span> </h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/pho-de-nhat-bo-65g.jpg" alt="">
+                                <p>>Phở bò Đệ Nhất</p>
+                                <h4>20.000đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-product">
+                <h3>Bánh Kẹo</h3>
+                <div class="inner-items">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thumb-327778-1_202411261345113148.jpg" alt="">
+                                <p>Snack hình cua</p>
+                                <h4>31.600 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thumb-327775-1_202411261345027489.jpg" alt="">
+                                <p>vị sườn nướng Poca 60g</p>
+                                <h4>43.600 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/snack-khoai-tay-vi-tu-nhien-lays-stax-lon-42g.jpg" alt="">
+                                <p>Lay's Stax 42g</p>
+                                <h4>6.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/snack-khoai-tay-vi-pho-mai-cheddar-lays-wavy-goi-54g.jpg" alt="">
+                                <p>Cheddar Lay's 53g</p>
+                                <h4>45.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/snack-hinh-mu-phap-su-vi-pho-mai-poca-goi-58g.jpg" alt="">
+                                <p>vị phô mai Poca 58g</p>
+                                <h4>22.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/snack-bap-koikeya-polinky-goi-54g.jpg" alt="">
+                                <p>Koikeya Polinky 54g</p>
+                                <h4>23.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thumb-79708_202411261112092491.jpg" alt="">
+                                <p>Snack bí đỏ</p>
+                                <h4>21.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thumb-79710_202411261112142495.jpg" alt="">
+                                <p>Snack phồng mực Oishi</p>
+                                <h4>42.500 đ <span>đơn vị tính gói</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thumb-79795_202411261113336566.jpg" alt="">
+                                <p>Snack tôm cay Oishi </p>
+                                <h4>6.000đ <span>gói 32g</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/snack-poca-khoai-tay-suon-nuong-52g.jpg" alt="">
+                                <p>Snack sườn  Poca </p>
+                                <h4>12.000đ <span>gói 52</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        
+
+       
+                       
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+     </div>
+     <!-- end -->
+
+
+    <!-- san pham cu -->
+     <!-- end -->
+
+
+    <!-- san pham hoa qua -->
+     <!-- end -->
+    <!-- footer -->
+     
+
+
+<!-- footer -->
+      <footer class="footer">
+       <div class="container">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Về 9Group Mart</h3>
+        <p>9Group Mart là siêu thị thực phẩm sạch chuyên cung cấp rau củ, thịt cá, đồ khô và sản phẩm thiết yếu cho mọi gia đình Việt. Chúng tôi cam kết mang đến thực phẩm tươi ngon, an toàn và giá cả hợp lý nhất.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên kết nhanh</h3>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên hệ</h3>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> 123 Đường Láng, Hà Nội</li>
+          <li><i class="fa-solid fa-phone"></i> 0123 456 789</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@9groupmart.vn</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 9Group Mart. Tất cả các quyền được bảo lưu.</p>
+    </div>
+  </div>
+      </footer>
+      <!-- end footer -->
+        <script src="banner.js"></script>
+        <script src="laydulieu.js"></script>
+        <script src="timkiem.js"></script>
+        <script src="giohang2.js"></script>
+        <script>
+            const products =[
+                { name: "Mì sempio vị hải sản", price: 18500, img: "./assets/images/mi-sempio-vi-hai-san-rong-bien-103g.jpg", unit: "gói" },
+  { name: "Mì Kokomi", price: 10000, img: "./assets/images/mi-kokomi-90-tom-chua-cay-goi-90g.jpg", unit: "gói" },
+  { name: "Mì trộn phô mai", price: 8900, img: "./assets/images/mi-tron-pho-mai-mini-ottogi-goi-80g.jpg", unit: "gói" },
+  { name: "Mì xào 3 Miền", price: 30000, img: "./assets/images/mi-xao-3-mien-gold-hanh-phi-tuong-toi-goi-75g.jpg", unit: "gói" },
+  { name: "Mì Oppa tôm chua cay", price: 25000, img: "./assets/images/mi-oppa-tom-chua-cay-ottogi-goi-65g.jpg", unit: "gói" },
+  { name: "Mì 3 Miền gà sợi", price: 20000, img: "./assets/images/mi-3-mien-ga-soi-pho-goi-65g.jpg", unit: "gói" },
+  { name: "Bún cá cay", price: 23000, img: "./assets/images/bun-ca-cay-hang-nga-goi-70g_202509160947334525.jpg", unit: "gói" },
+  { name: "Phở bò Vifon 90g", price: 25000, img: "./assets/images/pho-bo-vifon-goi-90g-co-goi-thit-that_202508211335079753.jpg", unit: "gói" },
+  { name: "Lốc 5  Cung Đình", price: 39900, img: "./assets/images/pho-ga-cung-dinh-ha-noi-goi-68g.jpg", unit: "gói" },
+  { name: "Phở bò Đệ Nhất", price: 20000, img: "./assets/images/pho-de-nhat-bo-65g.jpg", unit: "gói" },
+
+  // --- Danh sách Bánh kẹo & Snack ---
+  { name: "Snack hình cua", price: 31600, img: "./assets/images/thumb-327778-1_202411261345113148.jpg", unit: "gói" },
+  { name: "Snackgói phở bò", price: 35000, img: "./assets/images/loc-5-goi-pho-bo-tai-lan-de-nhat-goi-68g_202503261319238121.jpg", unit: "gói" },
+  { name: "Phở ăn liền Long Triều", price: 30500, img: "./assets/images/pho-an-lien-long-trieu-vifon-vi-bo-goi-75g-202405171350042467.jpg", unit: "gói" },
+  { name: "Phở gà vị sườn nướng Poca 60g", price: 43600, img: "./assets/images/thumb-327775-1_202411261345027489.jpg", unit: "gói" },
+  { name: "Lay's Stax 42g", price: 6500, img: "./assets/images/snack-khoai-tay-vi-tu-nhien-lays-stax-lon-42g.jpg", unit: "gói" },
+  { name: "Cheddar Lay's 53g", price: 45500, img: "./assets/images/snack-khoai-tay-vi-pho-mai-cheddar-lays-wavy-goi-54g.jpg", unit: "gói" },
+  { name: "Snack vị phô mai Poca 58g", price: 22500, img: "./assets/images/snack-hinh-mu-phap-su-vi-pho-mai-poca-goi-58g.jpg", unit: "gói" },
+  { name: "Koikeya Polinky 54g", price: 23500, img: "./assets/images/snack-bap-koikeya-polinky-goi-54g.jpg", unit: "gói" },
+  { name: "Snack bí đỏ", price: 21500, img: "./assets/images/thumb-79708_202411261112092491.jpg", unit: "gói" },
+  { name: "Snack phồng mực Oishi", price: 42500, img: "./assets/images/thumb-79710_202411261112142495.jpg", unit: "gói" },
+  { name: "Snack tôm cay Oishi", price: 6000, img: "./assets/images/thumb-79795_202411261113336566.jpg", unit: "gói" },
+  { name: "Snack sườn Poca", price: 12000, img: "./assets/images/snack-poca-khoai-tay-suon-nuong-52g.jpg", unit: "gói" }
+];
+         saveProductsToLocalStorage(products);   
+        </script>
+  
+</body>
+</html>

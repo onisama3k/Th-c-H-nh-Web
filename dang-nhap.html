@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dang-nhap-dang-ki.css">
+    <title>đăng nhâp</title>
+</head>
+<link rel="stylesheet" href="./assets/css/base.css">
+<link rel="stylesheet" href="./assets/css/dang-nhap-dang-ki.css">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700&display=swap" rel="stylesheet">
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="./assets/images/logo.png" alt=""></a>
+        </nav>
+    </header>
+    <main class="login-container">
+        <div class="login-box-wrapper">
+          <h1>TÀI KHOẢN</h1>
+            <form onsubmit="return validateLoginForm(event)">
+             <div class="login-box">
+              <label for ="email">Email:</label>
+              <input type ="email" id="LoginEmail" name="email">
+             </div>
+             <div class="login-box">
+              <label for ="password">Mật Khẩu:</label>
+              <input type ="password" id="LoginPassword" name="password">
+            </div>
+            <div class="button-group">
+              <button type="submit" class="login-button">Đăng Nhập</button>
+            </div>
+            </form>
+        <div class="note-register">
+            <p class="note">Bạn chưa có tài khoản?</p>
+            <a href="dang-ki.html">
+              <button type="submit" class="login-button">Đăng Kí</button>
+            </a>
+        </div>
+        <div class="error-box" id="errorBox">
+            <span class="close-btn" onclick="closeErrorBox()">&times;</span>
+            <div id="LoginErrorMessages" style="color: red; margin-top: 10px;"></div>
+        </div>
+        </div>
+    </main>
+    <script src ="dang-nhap-ki.js"></script>
+ </body>       
+</html>

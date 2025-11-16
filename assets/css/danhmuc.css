@@ -1,0 +1,566 @@
+body{
+    padding-top:0px;
+    margin: 0;
+    
+}
+
+
+/* header */
+
+.header{
+    background-color:var(--maincolor1);
+    position: fixed;
+    z-index: 9999;
+}
+.header-top{
+    width: 100%;
+    position: fixed;
+    background-color:var(--maincolor1);
+    height:100px;
+    z-index: 1000;
+    
+}
+.inner-header-top{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100px;
+    align-content: center;
+    width: 1110px;
+    width:113%;
+    
+   
+}
+
+.logo img{
+    width: auto;
+    height: 90px;
+    padding: 0px;
+}
+.form-search{
+    margin-top: 35px;
+    background-color: white;
+    width:572px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border-radius: 20px;
+    position: relative;
+    z-index:9999;
+}
+.form-search input{
+    border: none;
+    outline: none;
+    width:500px;
+    font-size: 15px;
+}
+.search-btn{
+  cursor: pointer;
+}
+.search-btn i{
+    padding-left: 10px;
+    color:var(--maincolor3);
+}
+
+.inner-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.inner-left a{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 18px;
+        color: var(--maincolor2);
+    }
+}
+.inner-left i{
+    color: var(--maincolor2);
+    font-size: 23px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.inner-left span {
+    color: var(--maincolor2);
+    font-size: 12px;
+}
+.inner-left a p{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.login{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login a{
+    color: var(--maincolor2);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-right: 0;
+    font-weight: 700;
+
+}
+.header-bottom{
+    position: fixed;
+    width:100%;
+     background-color: var(--maincolor2);
+     height: 50px;
+     margin-left: 0px;
+     z-index: 999;
+
+    .inner-header-bottom{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span{
+            font-size: 18px;
+            color:var(--maincolor3);
+        }
+        i{
+            color:var(--maincolor3);
+        }
+       
+    }
+}
+/* danh muc san pham */
+.inner-header-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: var(--maincolor2);
+  padding: 0 20px;
+}
+
+/* --- Nút icon và chữ Danh mục --- */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  /* cursor: pointer; */
+  padding: 8px 12px;
+  
+  transition: background 0.2s ease;
+}
+
+/* .menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.menu-toggle i,
+.menu-toggle span {
+  color:var(--maincolor3);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* --- Menu xổ xuống --- */
+.danh-muc {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background-color: #ffffff;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+  animation: fadeIn 0.25s ease;
+  z-index: 100;
+}
+
+/* Hiện menu khi hover vào icon hoặc chữ */
+.menu-toggle:hover .danh-muc {
+  display: block;
+}
+
+.danh-muc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.danh-muc ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: var(--maincolor1);
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.danh-muc ul li a:hover {
+  background-color: var(--maincolor1);
+  color: var(--maincolor2);
+}
+
+
+/* .menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.menu-toggle i,
+.menu-toggle span {
+  color:var(--maincolor2);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* --- Menu xổ xuống --- */
+.danh-muc {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+  animation: fadeIn 0.25s ease;
+  z-index: 100;
+}
+
+/* Hiện menu khi hover vào icon hoặc chữ */
+.menu-toggle:hover .danh-muc {
+  display: block;
+}
+
+.danh-muc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.danh-muc ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.danh-muc ul li a:hover {
+  background-color: var(--maincolor1);
+  color: var(--maincolor2);
+}
+
+/* end danh muc san pham */
+
+/* end header */
+
+/* quang cao */
+.advertising {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 350px;
+  z-index: 1;
+  position: relative;
+  pointer-events: auto;
+  top:120px;
+}
+
+.inner-banner {
+  position: relative;
+  width: 1110px;
+  height: 413px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  pointer-events: none;
+  z-index: 2;
+  pointer-events: auto;
+}
+
+/* Mỗi slide */
+.banner-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.banner-side.active {
+  opacity: 1;
+}
+
+.banner-side img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Nút điều hướng */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color:var(--maincolor1);
+  border: none;
+  color: white;
+  font-size: 28px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 3;
+  pointer-events: auto;
+}
+
+.prev:hover, .next:hover {
+  background-color:var(--maincolor4);
+}
+
+.prev {
+  left: 15px;
+}
+
+.next {
+  right: 15px;
+}
+
+/* Chấm tròn điều hướng */
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  background-color:var(--maincolor1);
+}
+/* end quang cao */
+/* link page */
+.link-page{
+    margin-top: 0px;
+    top: 130px;
+    padding:30px ;
+    padding-bottom: 0;
+    margin-bottom: 50px;
+    height: 50px;
+    
+    position: relative;
+    z-index: 10;
+    
+    
+    .inner-link{
+        border-bottom: 3px solid #ddd;
+        padding-bottom: 7px;
+        a{
+            padding-bottom: 5px;
+            color:var(--maincolor3);
+        }
+
+        span{
+            color: var(--maincolor3);
+        }
+    }
+}
+/* san pham*/
+.product{
+    margin-top: 550px;
+    z-index: 1;
+}
+.inner-product{
+    background-color: var(--maincolor22);
+    margin-top: -450px;
+    height: 1200px;
+    z-index: 1;
+    h3{
+        padding: 20px 20px 10px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #060707;
+        margin-top: 0;
+    }
+
+}
+.inner-items{
+    
+    margin-left: 15px;
+    margin-right: 15px;
+    .row .col-2{
+        padding: 0;
+        margin-left: 0px;
+        width: 150px;
+    }
+    .item{
+        background-color: #ffffff;
+        height: 330px;
+        
+        border: 1px solid var(--maincolor2);
+        img{
+            width:185px;
+            height:185px;
+             border-right: 1px solid var(--maincolor2);
+        }
+        p{
+            font-size: 15px;
+            text-align: left;
+            padding:5px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            color: var(--maincolor3);
+            margin-bottom: 0;
+            height:45px;
+        }
+        h4{
+            font-size: 18px;
+            color:var(--maincolor1);
+            margin-left: 10px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        strike{
+            font-size: 12px;
+            font-weight: 100px;
+            color: var(--maincolor3);
+        }
+        span{
+            font-size: 12px;
+            color: var(--maincolor3);
+        }
+        .btn-2{
+            font-size: 10px;
+            background-color: var(--maincolor2);
+            border: none;
+            border-radius: 50px;
+            margin-left: 40px;
+            p{
+                color:var(--maincolor1);
+                font-weight: 600;
+                text-align: center;
+                padding: 10px 20px;
+                font-size: 15px;
+            }
+        }
+        .btn-2:hover{
+            background-color: var(--maincolor1);
+            border: 2px solid var(--maincolor2);
+            p{
+                color: var(--maincolor2);
+            }
+        }
+
+
+    }
+
+}
+.clear{
+    background-color: var(--maincolor2);
+    height:400px;
+    margin-top: 40px;
+}
+/* footer */
+
+.footer {
+  margin-top: 2500px;
+  color: var(--maincolor2);
+  background-color: var(--maincolor1);
+  height: 500px;
+  font-size: 16px;
+  padding-bottom: 0;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+ 
+  width: 100%;
+}
+
+.footer-col h3 {
+    padding-top: 25px;
+  color: var(--maincolor2);
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer-col p {
+  color: var(--maincolor2);
+  line-height: 1.7;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 10px;
+  color: var(--maincolor2);
+}
+
+.footer-col ul li i {
+  margin-right: 8px;
+  color: var(--maincolor2);
+  font-size: 15px;
+}
+
+.footer-col ul li a {
+  color: var(--maincolor2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  text-decoration:underline;
+}
+.socials {
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color:var(--maincolor1);
+  border: 2px solid var(--maincolor2);
+  color: var(--maincolor2);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background-color: white;
+  color: var(--maincolor1);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  color: var(--maincolor2);
+  font-size: 14px;
+  opacity: 0.9;
+}
+/* end  */

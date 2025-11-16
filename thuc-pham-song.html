@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực phẩm sống</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/danhmuc.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header-top">
+        <div class="container">
+             <div class="header">
+            <div class="inner-header-top">
+                <div class="logo">
+                   <a href="index.html"> <img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="form-search">
+                     <span class="search-btn" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" id="searchInput" class="form-search-input" placeholder="Tìm kiếm sp...">
+                </div>
+
+                <div class="inner-left">
+                    <a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p></a>
+                    <a href="dang-nhap.html"><i class="fa-solid fa-user"></i>
+                    <p>Tài khoản</p>
+                    </a>
+                     
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="inner-header-bottom">
+                    <div class="menu-toggle">
+                       <i class="fa-solid fa-bars"></i>
+                       <span>Danh mục sản phẩm</span> 
+                     <div class="danh-muc">
+                        <ul>
+                           <li><a href="rau-cu-qua.html">Rau - củ - quả</a></li>
+                           <li><a href="thuc-pham-song.html">Thực phẩm tươi sống - hải sản</a></li>
+                           <li><a href="thuc-pham-kho.html">Thực phẩm khô - bánh kẹo & snack</a></li>
+                           <li><a href="do-uong.html">Đồ uống</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+     </div>
+    <!-- end header -->
+     <!-- thanh dieu huong -->
+    <div class="link-page">
+        <div class="container">
+            <div class="inner-link">
+                <a href="index.html">Trang chủ </a>
+                <span>/</span>
+                <a href="thuc-pham-song.html"> Thực phẩm sống</a>
+            </div>
+        </div>
+    </div>
+    <!-- end thanh dieu huong -->
+    <!-- quang cao -->
+     <div class="advertising">
+        <div class="container">
+            <div class="inner-banner">
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-thit1.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-thit2.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-thit3.png" alt="">
+                </div>
+                 <div class="banner-side active">
+                    <img src="./assets/images/banner-thit4.png" alt="">
+                 </div>
+                
+
+                 <!-- Nút điều hướng -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Chấm tròn chỉ số -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+            </div>
+        </div>
+     </div>
+     <!-- end quang cao -->
+    
+
+    <!-- san pham rau -->
+     <div class="product">
+        <div class="container">
+            <div class="inner-product">
+                <h3>Thịt lợn</h3>
+                <div class="inner-items">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/t1.png" alt="">
+                                <p>Thịt lợn cốt lết</p>
+                                <h4>56.500đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thit1.png" alt="">
+                                <p>Thịt nhập khẩu 500g</p>
+                                <h4>100.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thit2.png" alt="">
+                                <p>Ba Chỉ Bò Nhập Khẩu</p>
+                                <h4>163.900đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="inner-product">
+                <h3>Thịt bò</h3>
+                <div class="inner-items">
+                    <div class="row">
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thit2.png" alt="">
+                                <p>Ba Chỉ Bò Nhập Khẩu</p>
+                                <h4>163.900đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/bo1.png" alt="">
+                                <p>Lõi thăn vai bò</p>
+                                <h4>243.600 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/bo2.png" alt="">
+                                <p>Thịt Bò Xay 300g</p>
+                                <h4>86.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+
+       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="inner-product">
+                <h3>Hải sản</h3>
+                <div class="inner-items">
+                    <div class="row">
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/h1.png" alt="">
+                                <p>Cá diêu hồng tươi </p>
+                                <h4>149.660 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/h2.png" alt="">
+                                <p>Cá hồi</p>
+                                <h4>819.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/h3.png" alt="">
+                                <p>Cá tươi</p>
+                                <h4>955.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/h4.png" alt="">
+                                <p>Cua đồng</p>
+                                <h4>19.000 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/h5.png" alt="">
+                                <p>Nghêu sạch khay 600g</p>
+                                <h4>39.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            
+        </div>
+     </div>
+     <!-- end -->
+
+
+     
+
+
+<!-- footer -->
+      <footer class="footer">
+       <div class="container">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Về 9Group Mart</h3>
+        <p>9Group Mart là siêu thị thực phẩm sạch chuyên cung cấp rau củ, thịt cá, đồ khô và sản phẩm thiết yếu cho mọi gia đình Việt. Chúng tôi cam kết mang đến thực phẩm tươi ngon, an toàn và giá cả hợp lý nhất.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên kết nhanh</h3>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên hệ</h3>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> 123 Đường Láng, Hà Nội</li>
+          <li><i class="fa-solid fa-phone"></i> 0123 456 789</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@9groupmart.vn</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 9Group Mart. Tất cả các quyền được bảo lưu.</p>
+    </div>
+  </div>
+      </footer>
+      <!-- end footer -->
+       <script src="banner.js"></script>
+        <script src="laydulieu.js"></script>
+        <script src="timkiem.js"></script>
+        <script src="giohang2.js"></script>
+        <script>
+  const products = [
+    { name: "Thịt lợn cốt lết", price: 56500, img: "./assets/images/t1.png", unit: "kg" },
+    { name: "Thịt nhập khẩu 500g", price: 100000, img: "./assets/images/thit1.png", unit: "kg" },
+    { name: "Ba Chỉ Bò Nhập Khẩu", price: 163900, img: "./assets/images/thit2.png", unit: "kg" },
+    { name: "Lõi thăn vai bò", price: 243600, img: "./assets/images/bo1.png", unit: "kg" },
+    { name: "Thịt Bò Xay 300g", price: 86500, img: "./assets/images/bo2.png", unit: "kg" },
+    { name: "Cá diêu hồng tươi", price: 149660, img: "./assets/images/h1.png", unit: "kg" },
+    { name: "Cá hồi", price: 819900, img: "./assets/images/h2.png", unit: "kg" },
+    { name: "Cá tươi", price: 955900, img: "./assets/images/h3.png", unit: "kg" },
+    { name: "Cua đồng", price: 19000, img: "./assets/images/h4.png", unit: "kg" },
+    { name: "Nghêu sạch khay 600g", price: 39900, img: "./assets/images/h5.png", unit: "kg" }
+  ];
+  saveProductsToLocalStorage(products);
+</script>
+
+</body>
+</html>

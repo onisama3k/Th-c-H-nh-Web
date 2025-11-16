@@ -1,0 +1,25 @@
+*{
+    margin:0;
+}
+:root{
+    --maincolor1:#221FC6;
+    --maincolor2:#F0F2F5;
+    --maincolor3:#82869E;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:var(--maincolor2);
+    height: 2500px;
+    box-sizing: border-box;
+
+    
+}
+.container{
+    width:100%;
+    width:1200px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+

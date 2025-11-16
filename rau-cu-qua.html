@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rau-củ-quả</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/danhmuc.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+<body>
+    <!-- header -->
+    <div class="header-top">
+        <div class="container">
+             <div class="header">
+            <div class="inner-header-top">
+                <div class="logo">
+                   <a href="index.html"> <img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="form-search">
+                     <span class="search-btn" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" id="searchInput" class="form-search-input" placeholder="Tìm kiếm sp...">
+                </div>
+
+                <div class="inner-left">
+                    <a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p></a>
+                    <a href="dang-nhap.html"><i class="fa-solid fa-user"></i>
+                    <p>Tài khoản</p>
+                    </a>
+                     
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="inner-header-bottom">
+                    <div class="menu-toggle">
+                       <i class="fa-solid fa-bars"></i>
+                       <span>Danh mục sản phẩm</span> 
+                     <div class="danh-muc">
+                        <ul>
+                           <li><a href="rau-cu-qua.html">Rau - củ - quả</a></li>
+                           <li><a href="thuc-pham-song.html">Thực phẩm tươi sống - hải sản</a></li>
+                           <li><a href="thuc-pham-kho.html">Thực phẩm khô - bánh kẹo & snack</a></li>
+                           <li><a href="do-uong.html">Đồ uống</a></li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </div>
+     </div>
+    <!-- end header -->
+     <!-- thanh dieu huong -->
+    <div class="link-page">
+        <div class="container">
+            <div class="inner-link">
+                <a href="index.html">Trang chủ </a>
+                <span>/</span>
+                <a href=""> Rau-củ-quả</a>
+            </div>
+        </div>
+    </div>
+    <!-- end thanh dieu huong -->
+    <!-- quang cao -->
+     <div class="advertising">
+        <div class="container">
+            <div class="inner-banner">
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-rau-cu.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-rau-cu-2.png" alt="">
+                </div>
+
+                <div class="banner-side active">
+                    <img src="./assets/images/banner-rau-cu.png" alt="">
+                </div>
+                 <div class="banner-side active">
+                    <img src="./assets/images/banner-rau-cu-2.png" alt="">
+                 </div>
+                
+
+                 <!-- Nút điều hướng -->
+  <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+
+  <!-- Chấm tròn chỉ số -->
+  <div class="dots">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+            </div>
+        </div>
+     </div>
+     <!-- end quang cao -->
+    
+
+    <!-- san pham rau -->
+     <div class="product">
+        <div class="container">
+            <div class="inner-product">
+                <h3>Rau sạch</h3>
+                <div class="inner-items">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/raudien.png" alt="">
+                                <p>Rau dền 500g</p>
+                                <h4>18.500đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/giado.png" alt="">
+                                <p>Giá đỗ WinEco 300g</p>
+                                <h4>10.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/thiala.png" alt="">
+                                <p>Thì là 50g</p>
+                                <h4>8.900đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/raucai.png" alt="">
+                                <p>Cải sậy kg</p>
+                               <h4>30.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/caingot.png" alt="">
+                                <p>Cải ngọt kg</p>
+                                <h4>25.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/docmung.png" alt="">
+                                <p>Dọc Mùng</p>
+                                <h4>20.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <div class="item">
+                                <img src="./assets/images/dau.png" alt="">
+                                <p>Đậu đũa kg</p>
+                                <h4>23.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <div class="item">
+                                <img src="./assets/images/den.png" alt="">
+                                <p>Rau đay kg</p>
+                                <h4>25.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cai.png" alt="">
+                                <p>Bắp cải trái tim</p>
+                                <h4>35.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/ngot.png" alt="">
+                                <p>Rau bồ ngót</p>
+                                <h4>30.500đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/toi.png" alt="">
+                                <p>Rau mồng tơi kg</p>
+                                <h4>39.900đ <span>đơn vị tính kg</span> </h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/mong.png" alt="">
+                                <p>Rau muống kg</p>
+                                <h4>20.000đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="inner-product">
+                <h3>Củ-quả</h3>
+                <div class="inner-items">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu1.png" alt="">
+                                <p>Củ Sả WinEco 100g</p>
+                                <h4>3.600 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu2.png" alt="">
+                                <p>Hành Lý Sơn gói 500g</p>
+                                <h4>43.600 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu3.png" alt="">
+                                <p>Củ gừng 100g</p>
+                                <h4>6.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu4.png" alt="">
+                                <p>Cà rốt 1kg</p>
+                                <h4>45.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu5.png" alt="">
+                                <p>Cà rốt baby 200g</p>
+                                <h4>22.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu12.png" alt="">
+                                <p>Củ đậu</p>
+                                <h4>23.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu6.png" alt="">
+                                <p>Khoai tây 500g</p>
+                                <h4>21.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu7.png" alt="">
+                                <p>Khoai lang mật 200g</p>
+                                <h4>42.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu8.png" alt="">
+                                <p> Cà tím dài</p>
+                                <h4>26.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu9.png" alt="">
+                                <p>Ớt chuông đỏ  </p>
+                                <h4>52.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu10.png" alt="">
+                                <p>Dưa chuột baby 500g</p>
+                                <h4>26.500 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/cu11.png" alt="">
+                                <p>Chanh không hạt 500g</p>
+                                <h4>19.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                        
+
+       
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="inner-product">
+                <h3>Trái cây</h3>
+                <div class="inner-items">
+                    <div class="row">
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai1.png" alt="">
+                                <p>Dưa hấu ruột vàng</p>
+                                <h4>49.660 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai2.png" alt="">
+                                <p>Dưa lê trắng</p>
+                                <h4>19.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai3.png" alt="">
+                                <p>Xoài cát chu</p>
+                                <h4>55.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai4.png" alt="">
+                                <p>Táo Envy New túi 1Kg</p>
+                                <h4>199.000 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai5.png" alt="">
+                                <p>Bưởi hồng miền Tây</p>
+                                <h4>39.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai6.png" alt="">
+                                <p>Bưởi đường lá cam</p>
+                                <h4>49.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai7.png" alt="">
+                                <p>Bưởi hồng da xanh</p>
+                                <h4>99.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai8.png" alt="">
+                                <p>Chuối dole</p>
+                                <h4>59.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai9.png" alt="">
+                                <p>Chuối vàng</p>
+                                <h4>34.000 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai10.png" alt="">
+                                <p>Kiwi Newzealand</p>
+                                <h4>119.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai11.png" alt="">
+                                <p>Nho đen không hạt Mỹ</p>
+                                <h4>259.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                         <div class="col-2">
+                            <div class="item">
+                                <img src="./assets/images/trai12.png" alt="">
+                                <p>Thanh long ruột trắng</p>
+                                <h4>39.900 đ <span>đơn vị tính kg</span></h4> 
+                                <button class="btn-2"> <p>Thêm </p></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"> </div>
+            </div>
+            
+        </div>
+     </div>
+     <!-- end -->
+
+
+    <!-- san pham cu -->
+     <!-- end -->
+
+
+    <!-- san pham hoa qua -->
+     <!-- end -->
+    <!-- footer -->
+     
+
+
+<!-- footer -->
+      <footer class="footer">
+       <div class="container">
+    <div class="footer-top">
+      <div class="footer-col">
+        <h3>Về 9Group Mart</h3>
+        <p>9Group Mart là siêu thị thực phẩm sạch chuyên cung cấp rau củ, thịt cá, đồ khô và sản phẩm thiết yếu cho mọi gia đình Việt. Chúng tôi cam kết mang đến thực phẩm tươi ngon, an toàn và giá cả hợp lý nhất.</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên kết nhanh</h3>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="gioithieu.html">Giới thiệu</a></li>
+          <li><a href="#">Sản phẩm</a></li>
+          <li><a href="#">Khuyến mãi</a></li>
+          <li><a href="#">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Liên hệ</h3>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> 123 Đường Láng, Hà Nội</li>
+          <li><i class="fa-solid fa-phone"></i> 0123 456 789</li>
+          <li><i class="fa-solid fa-envelope"></i> contact@9groupmart.vn</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Kết nối với chúng tôi</h3>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 9Group Mart. Tất cả các quyền được bảo lưu.</p>
+    </div>
+  </div>
+      </footer>
+      <!-- end footer -->
+        <script src="banner.js"></script>
+        <script src="laydulieu.js"></script>
+        <script src="timkiem.js"></script>
+        <script src="giohang2.js"></script>
+       <script>const products = [
+  // Rau sạch
+  { name: "Rau dền 500g", image: "./assets/images/raudien.png", price: "18.500đ", unit: "kg" },
+  { name: "Giá đỗ WinEco 300g", image: "./assets/images/giado.png", price: "10.000đ", unit: "kg" },
+  { name: "Thì là 50g", image: "./assets/images/thiala.png", price: "8.900đ", unit: "kg" },
+  { name: "Cải sậy kg", image: "./assets/images/raucai.png", price: "30.000đ", unit: "kg" },
+  { name: "Cải ngọt kg", image: "./assets/images/caingot.png", price: "25.000đ", unit: "kg" },
+  { name: "Dọc mùng", image: "./assets/images/docmung.png", price: "20.000đ", unit: "kg" },
+  { name: "Đậu đũa kg", image: "./assets/images/dau.png", price: "23.000đ", unit: "kg" },
+  { name: "Rau đay kg", image: "./assets/images/den.png", price: "25.000đ", unit: "kg" },
+  { name: "Bắp cải trái tim", image: "./assets/images/cai.png", price: "35.000đ", unit: "kg" },
+  { name: "Rau bồ ngót", image: "./assets/images/ngot.png", price: "30.500đ", unit: "kg" },
+  { name: "Rau mồng tơi kg", image: "./assets/images/toi.png", price: "39.900đ", unit: "kg" },
+  { name: "Rau muống kg", image: "./assets/images/mong.png", price: "20.000đ", unit: "kg" },
+
+  // Củ - quả
+  { name: "Củ sả WinEco 100g", image: "./assets/images/cu1.png", price: "3.600đ", unit: "kg" },
+  { name: "Hành Lý Sơn gói 500g", image: "./assets/images/cu2.png", price: "43.600đ", unit: "kg" },
+  { name: "Củ gừng 100g", image: "./assets/images/cu3.png", price: "6.500đ", unit: "kg" },
+  { name: "Cà rốt 1kg", image: "./assets/images/cu4.png", price: "45.500đ", unit: "kg" },
+  { name: "Cà rốt baby 200g", image: "./assets/images/cu5.png", price: "22.500đ", unit: "kg" },
+  { name: "Củ đậu", image: "./assets/images/cu12.png", price: "23.500đ", unit: "kg" },
+  { name: "Khoai tây 500g", image: "./assets/images/cu6.png", price: "21.500đ", unit: "kg" },
+  { name: "Khoai lang mật 200g", image: "./assets/images/cu7.png", price: "42.500đ", unit: "kg" },
+  { name: "Cà tím dài", image: "./assets/images/cu8.png", price: "26.900đ", unit: "kg" },
+  { name: "Ớt chuông đỏ", image: "./assets/images/cu9.png", price: "52.500đ", unit: "kg" },
+  { name: "Dưa chuột baby 500g", image: "./assets/images/cu10.png", price: "26.500đ", unit: "kg" },
+  { name: "Chanh không hạt 500g", image: "./assets/images/cu11.png", price: "19.900đ", unit: "kg" },
+
+  // Trái cây
+  { name: "Dưa hấu ruột vàng", image: "./assets/images/trai1.png", price: "49.660đ", unit: "kg" },
+  { name: "Dưa lê trắng", image: "./assets/images/trai2.png", price: "19.900đ", unit: "kg" },
+  { name: "Xoài cát chu", image: "./assets/images/trai3.png", price: "55.900đ", unit: "kg" },
+  { name: "Táo Envy New túi 1Kg", image: "./assets/images/trai4.png", price: "199.000đ", unit: "kg" },
+  { name: "Bưởi hồng miền Tây", image: "./assets/images/trai5.png", price: "39.900đ", unit: "kg" },
+  { name: "Bưởi đường lá cam", image: "./assets/images/trai6.png", price: "49.900đ", unit: "kg" },
+  { name: "Bưởi hồng da xanh", image: "./assets/images/trai7.png", price: "99.900đ", unit: "kg" },
+  { name: "Chuối dole", image: "./assets/images/trai8.png", price: "59.900đ", unit: "kg" },
+  { name: "Chuối vàng", image: "./assets/images/trai9.png", price: "34.000đ", unit: "kg" },
+  { name: "Kiwi Newzealand", image: "./assets/images/trai10.png", price: "119.900đ", unit: "kg" },
+  { name: "Nho đen không hạt Mỹ", image: "./assets/images/trai11.png", price: "259.900đ", unit: "kg" },
+  { name: "Thanh long ruột trắng", image: "./assets/images/trai12.png", price: "39.900đ", unit: "kg" },
+       ];
+       saveProductsToLocalStorage(products);
+</script>
+</body>
+</html>

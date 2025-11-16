@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kết quả tìm kiếm</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/ketqua.css">
+</head>
+<body>
+    <!-- header -->
+     <div class="header-top">
+        <div class="container">
+             <div class="header">
+            <div class="inner-header-top">
+                <div class="logo">
+                   <a href="index.html" target="_self"> <img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="form-search">
+                    <span class="search-btn" onclick="searchProducts()"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" id="searchInput" class="form-search-input" placeholder="Tìm kiếm sp..."
+                            ">
+                </div>
+
+                <div class="inner-left">
+                    <a href="giohang.html"><i class="fa-solid fa-cart-shopping"></i>
+                    <p>Giỏ hàng</p></a>
+                    <a href="dang-nhap.html"><i class="fa-solid fa-user"></i>
+                    <p>Tài khoản</p>
+                    </a>
+                     
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="inner-header-bottom">
+  <div class="menu-toggle">
+    <i class="fa-solid fa-bars"></i>
+    <span>Danh mục sản phẩm</span> 
+    <div class="danh-muc">
+      <ul>
+        <li><a href="rau-cu-qua.html">Rau - củ - quả</a></li>
+        <li><a href="thuc-pham-song.html">Thực phẩm tươi sống - hải sản</a></li>
+        <li><a href="thuc-pham-kho.html">Thực phẩm khô - bánh kẹo & snack</a></li>
+        <li><a href="do-uong.html">Đồ uống</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+            </div>
+        </div>
+     </div>
+     <!-- end header -->
+
+     <!-- noi dung hien thi -->
+
+         <div class="products">
+            <div class="container">
+                 <div class="row" id="searchResults">
+                        
+                  </div>
+            </div>
+         </div>          
+      <!-- end -->
+       <script src="laydulieu.js"></script>
+       <script src="timkiem.js"></script>
+       <script src="giohang2.js"></script>
+    
+</body>
+</html>

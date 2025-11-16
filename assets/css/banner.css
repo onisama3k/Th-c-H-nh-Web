@@ -1,0 +1,264 @@
+.header{
+    background-color:var(--maincolor1);
+    position: fixed;
+  
+}
+.header-top{
+    width: 100%;
+    position: fixed;
+    background-color:var(--maincolor1);
+    height:100px;
+    
+    
+}
+.inner-header-top{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    height: 100px;
+    align-content: center;
+    width: 1110px;
+    width:113%;
+    
+   
+}
+
+.logo img{
+    width: auto;
+    height: 90px;
+    padding: 0px;
+}
+.form-search{
+    margin-top: 35px;
+    background-color: var(--maincolor3);
+    width:572px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    gap:5px;
+    border-radius: 20px;
+}
+.form-search input{
+    border: none;
+    outline: none;
+    width:500px;
+    font-size: 15px;
+}
+.search-btn i{
+    padding-left: 10px;
+    color:gray;
+}
+
+.inner-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.inner-left a{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+        font-size: 18px;
+        color: var(--maincolor3);
+    }
+}
+.inner-left i{
+    color: var(--maincolor3);
+    font-size: 23px;
+    padding-left: 0px;
+    margin-top: 20px;
+}
+.inner-left span {
+    color: var(--maincolor3);
+    font-size: 12px;
+}
+.inner-left a p{
+    padding-top: 5px;
+    font-size: 15px;
+}
+.login{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.login a{
+    color: var(--maincolor3);
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-right: 0;
+    font-weight: 700;
+
+}
+.header-bottom{
+    position: fixed;
+    width:100%;
+     background-color: var(--maincolor3);
+     height: 50px;
+     margin-left: 0px;
+
+    .inner-header-bottom{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        span{
+            font-size: 18px;
+            color:grey;
+        }
+        i{
+            color:grey;
+        }
+       
+    }
+}
+/* danh muc san pham */
+.inner-header-bottom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  background-color: var(--maincolor3);
+  padding: 0 20px;
+}
+
+/* --- Nút icon và chữ Danh mục --- */
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  /* cursor: pointer; */
+  padding: 8px 12px;
+  
+  transition: background 0.2s ease;
+}
+
+/* .menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+} */
+
+.menu-toggle i,
+.menu-toggle span {
+  color: #444;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* --- Menu xổ xuống --- */
+.danh-muc {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  background-color: #fff;
+ 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+  animation: fadeIn 0.25s ease;
+  z-index: 100;
+}
+
+/* Hiện menu khi hover vào icon hoặc chữ */
+.menu-toggle:hover .danh-muc {
+  display: block;
+}
+
+.danh-muc ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.danh-muc ul li a {
+  display: block;
+  padding: 12px 16px;
+  color: #333;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.danh-muc ul li a:hover {
+  background-color: var(--maincolor1);
+  color: var(--maincolor3);
+}
+
+/* end danh muc san pham */
+/* banner */
+.banner-container {
+  position: relative;
+  width: 1110px;
+  height: 413px;
+  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  
+}
+
+.banner-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.banner-slide.active {
+  opacity: 1;
+}
+
+.banner-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+  border: none;
+  color: white;
+  font-size: 30px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.prev:hover, .next:hover {
+  opacity: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 4px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: red;
+}
